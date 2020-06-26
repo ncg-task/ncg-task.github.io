@@ -1,6 +1,6 @@
 {
-    "name": "ShARC",
-    "short_name": "ShARC",
+    "name": "NLPContributionGraph",
+    "short_name": "NLPContributionGraph",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
