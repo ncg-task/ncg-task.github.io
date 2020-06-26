@@ -98,12 +98,13 @@ body, h1, h2, h3, h4, h5, h6 {
   /*color: #fd7e14;*/
   background: url(../img/ORKG-banner.png) no-repeat center center;
   background-size: cover;  
-h1 {
-  color: #f7f7f7;
-}  
   /*color: #f8f8f8;*/
   /*color: #ffffff;*/
 
+}
+
+.intro-header>h1 {
+  color: #FFA07A
 }
 
 .leaderboard-header {
