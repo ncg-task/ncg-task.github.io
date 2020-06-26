@@ -96,7 +96,8 @@ body, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   height: 600px;
   /*color: #f8f8f8;*/
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #343a40;
   background: url(../img/ORKG-banner.png) no-repeat center center;
   /*
     Image by Alex Proimos from Sydney, Australia (Kangaroo Portrait) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AKangaroo_Portrait_(6754298445).jpg">
