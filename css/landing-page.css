@@ -95,11 +95,11 @@ body, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 50px;
   text-align: left;
   height: 600px;
-  color: #fd7e14;
+  /*color: #fd7e14;*/
   background: url(../img/ORKG-banner.png) no-repeat center center;
   background-size: cover;  
 h1 {
-  color: #fd7e14;
+  color: #f7f7f7;
 }  
   /*color: #f8f8f8;*/
   /*color: #ffffff;*/
