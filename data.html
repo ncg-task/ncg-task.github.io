@@ -489,19 +489,14 @@
                 <pre>
 (<font style="font-variant: small-caps">Contribution</font>, has research problem, <font style="font-variant: small-caps">Ablation Analysis</font>),
 (<font style="font-variant: small-caps">Ablation Analysis</font>, on, <font style="font-variant: small-caps">TACRED dev set</font>),
-&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, from, <font style="font-variant: small-caps">entity representations and feedforward layers</font>),
-&nbsp;&nbsp;(<font style="font-variant: small-caps">entity representations and feedforward layers</font>, contribute, <font style="font-variant: small-caps">1.0 F1</font>),
+&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, from, <font style="font-variant: small-caps">entity representations and feedforward layers</font>),
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">entity representations and feedforward layers</font>, contribute, <font style="font-variant: small-caps">1.0 F1</font>),
+&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, remove, <font style="font-variant: small-caps">dependency structure</font>),
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">dependency structure</font>, score drops, <font style="font-variant: small-caps">by 3.2 F1</font>),
+&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, remove, <font style="font-variant: small-caps">dependency structure</font>),
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">dependency structure</font>, score drops, <font style="font-variant: small-caps">by 3.2 F1</font>),
 
         "TACRED dev set" : {
-          "from" : {
-            "entity representations and feedforward layers" : {
-              "contribute" : "1.0 F1"    
-            }
-          },
-          "remove" : {
-            "dependency structure" : {
-              "score drops" : "by 3.2 F1"
-            },
             "the feedforward layers, the LSTM component and the dependency structure" : {
               "F1 drops" : "by 10.3"
             }
