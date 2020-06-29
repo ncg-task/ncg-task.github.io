@@ -222,6 +222,11 @@
         .validation-initial, .validation-previous {
             display: none;
         }
+		
+		p.small {
+		  font-variant: small-caps;
+		}		
+		
     </style>
 </head>
 <!--<script src="vendor/jquery/jquery.min.js"></script>-->
@@ -331,16 +336,16 @@
                 <h2 class="section-heading"><a name="data_explain">Understanding the Data</a></h2>
 
                 <p class="lead">
-                    In this section we describe all the attributes of an instance in the dataset.
+                    In this section we present the eight core information units under which the triples are grouped.
                 </p>
 
                 <hr/>
-                <u><h4 class="section-heading">Attributes: </h4></u>
+				
                 <table border="0" class="lead" valign="top">
-                    <tr>
-                        <th valign="top">utterance_id:</th>
+                    <tr>					
+                        <th valign="top"><p class="small">ResearchProblem</p>:</th>
                         <td>&nbsp;</td>
-                        <td>Unique identification code for an instance in the dataset.</td>
+                        <td>It determines the research challenge addressed by a contribution using the predicate <i>hasResearchProblem</i>. By definition, it is the focus of the research investigation, in other words, \textit{the issue for which the solution must be obtained.</td>
                     </tr>
                     <tr>
                         <th valign="top">tree_id:</th>
