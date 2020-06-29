@@ -587,40 +587,38 @@
                 <!-- Example 5-->
                 <u><h4 class="section-heading">Example #5</h4></u>
                 <p class="lead">
-                    In this example, the user has only provided a scenario to the <i>operator</i> after answering the two questions in the history.
-                    This is why some of the information that can be inferred from the scenario is not in evidence, but in the history.
-                    This replicates many real world cases where a user may provide relevant but redundant information in a QA conversation.
-
+                    In this example, the <font style="font-variant: small-caps">Model</font> information unit is modeled. 
+					The reference paper is <a href="http://papers.nips.cc/paper/5550-convolutional-neural-network-architectures-for-mat" target="_blank">Convolutional Neural Network Architectures for Matching Natural Language Sentences</a>.
                 </p>
                 <div class="code-txt" style="max-height: 380vh">
                 <pre>
-"utterance_id": "05784a5789aaf4e1ac12293bc16e79c38e9ec40c",
-"tree_id": "9ae3d25b11bc3a4be81f5884371de3b7c145ad48",
-"source_url": "https://www.gov.uk/winter-fuel-payment/eligibility",
-"snippet": "You can't get the payment if you live in Cyprus, France, Gibraltar or Greece.",
-"question": "Can I get Winter Fuel Payment?",
-"scenario": "I want to apply and right now I'm living in the UK.",
-"history": [
-  {
-    "follow_up_question": "Do you live in Cyprus?",
-    "follow_up_answer": "No"
-  },
-  {
-    "follow_up_question": "Do you live in France?",
-    "follow_up_answer": "No"
+{
+  "has" : {
+    "Model" : {
+      "is" : ["deep neural network models", {"from sentence" : "Towards this end, we propose deep neural network models, which adapt the convolutional strategy (proven successful on image [11] and speech [1]) to natural language."}],
+      "adapt" : ["convolutional strategy", {"from sentence" : "Towards this end, we propose deep neural network models, which adapt the convolutional strategy (proven successful on image [11] and speech [1]) to natural language."}],
+      "naturally host" : {
+        "hierarchical composition for sentences" : {
+          "with" : {
+            "same convolutional architecture" : {
+              "To further explore" : "relation between representing sentences and matching them"
+            }
+          },
+          "from sentence" : "To further explore the relation between representing sentences and matching them, we devise a novel model that can naturally host both the hierarchical composition for sentences and the simple-to-comprehensive fusion of matching patterns with the same convolutional architecture."            
+        },
+        "simple-to-comprehensive fusion of matching patterns" : {
+          "with" : {
+            "same convolutional architecture" : {
+              "To further explore" : "relation between representing sentences and matching them"
+            }
+          },
+          "from sentence" : "To further explore the relation between representing sentences and matching them, we devise a novel model that can naturally host both the hierarchical composition for sentences and the simple-to-comprehensive fusion of matching patterns with the same convolutional architecture."            
+        }          
+      }
+    }
   }
-],
-"evidence": [
-  {
-    "follow_up_question": "Do you live in Gibraltar?",
-    "follow_up_answer": "No"
-  },
-  {
-    "follow_up_question": "Do you live in Greece?",
-    "follow_up_answer": "No"
-  }
-],
-"answer": "Yes"</pre>
+}
+				</pre>
                 </div>
                 <!-- -->
 
