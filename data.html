@@ -406,8 +406,7 @@
                 <p>NOTE: The input to a system should include <i>snippet, question, scenario and history</i> <b>ONLY</b>. <font color="red">Evidence and answer should not be included in the input to a
                     prediction model. </font></p>
                 <hr/>
-                <p class="lead">Below, we provide some examples of different types of instances and provide
-                    explanation.</p>
+                <p class="lead">Below, we provide five examples of different types of information units with supporting explanation.</p>
                 <!-- Example 2-->
                 <u><h4 class="section-heading">Example #1</h4></u>
                 <p class="lead">
@@ -416,15 +415,14 @@
                 </p>
                 <div class="code-txt">
                 <pre>
-"utterance_id": "a115eadd97c4857abf76c07dc08bffd4c3b73976",
-"tree_id": "9ae3d25b11bc3a4be81f5884371de3b7c145ad48",
-"source_url": "https://www.gov.uk/winter-fuel-payment/eligibility",
-"snippet": "You can't get the payment if you live in Cyprus, France, Gibraltar or Greece",
-"question": "Can I get Winter Fuel Payment?",
-"scenario": "",
-"history": [],
-"evidence": []
-"answer": "Do you live in Cyprus?"</pre>
+{
+  "has research problem" : [
+    ["Deep contextualized word representations", {"from sentence" : "TITLE"}],
+    ["new type of deep contextualized word representation", {"from sentence" : "We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy)."}],
+    ["ELMo (Embeddings from Language Models) representations", {"from sentence" : "For this reason, we call them ELMo (Embeddings from Language Models) representations."}]
+    ]
+}
+				</pre>
                 </div>
                 <p></p>
                 <!-- Example 2-->
