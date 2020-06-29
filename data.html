@@ -493,22 +493,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">entity representations and feedforward layers</font>, contribute, <font style="font-variant: small-caps">1.0 F1</font>),
 &nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, remove, <font style="font-variant: small-caps">dependency structure</font>),
 &nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">dependency structure</font>, score drops, <font style="font-variant: small-caps">by 3.2 F1</font>),
-&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, remove, <font style="font-variant: small-caps">dependency structure</font>),
-&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">dependency structure</font>, score drops, <font style="font-variant: small-caps">by 3.2 F1</font>),
-
-        "TACRED dev set" : {
-            "the feedforward layers, the LSTM component and the dependency structure" : {
-              "F1 drops" : "by 10.3"
-            }
-          },
-          "removing" : {
-            "pruning (i.e., using full trees as input)" : {
-              "hurts the result" : "by another 9.7 F1"
-            }
-          }
-        },
-
-
+&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, remove, <font style="font-variant: small-caps">the feedforward layers, the LSTM component and the dependency structure</font>),
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">the feedforward layers, the LSTM component and the dependency structure</font>, F1 drops, <font style="font-variant: small-caps">by 10.3</font>),
+&nbsp;&nbsp;(<font style="font-variant: small-caps">TACRED dev set</font>, removing, <font style="font-variant: small-caps">pruning (i.e., using full trees as input)</font>), and
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">pruning (i.e., using full trees as input)</font>,hurts the result, <font style="font-variant: small-caps">by another 9.7 F1</font>).
 				</pre>
                 </div>				
 				
