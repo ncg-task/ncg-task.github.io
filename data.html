@@ -445,24 +445,41 @@
                 <!-- Example 2-->
                 <u><h4 class="section-heading">Example #2</h4></u>
                 <p class="lead">
-                    In this example, user's question is under-specified. However, the conversation history contains
-                    enough information to derive an answer.
+                    In this example, the <font style="font-variant: small-caps">AblationAnalysis</font> information is modeled. 
+                    The reference paper is <a href="https://www.aclweb.org/anthology/D18-1244/" target="_blank">Deep contextualized word representations</a>. 
                 </p>
                 <div class="code-txt">
                 <pre>
-"utterance_id": "dd692dd2648dedb1de063241fc3323bb481d4842",
-"tree_id": "9ae3d25b11bc3a4be81f5884371de3b7c145ad48",
-"source_url": "https://www.gov.uk/winter-fuel-payment/eligibility",
-"snippet": "You can't get the payment if you live in Cyprus, France, Gibraltar or Greece",
-"question": "Can I get Winter Fuel Payment?",
-"scenario": "",
-"history": [
-  {
-    "follow_up_question": "Do you live in Cyprus?",
-   "follow_up_answer": "Yes"
+{
+  "has" : {
+    "Ablation Analysis" : {
+      "on" : {
+        "TACRED dev set" : {
+          "from" : {
+            "entity representations and feedforward layers" : {
+              "contribute" : "1.0 F1"    
+            }
+          },
+          "remove" : {
+            "dependency structure" : {
+              "score drops" : "by 3.2 F1"
+            },
+            "the feedforward layers, the LSTM component and the dependency structure" : {
+              "F1 drops" : "by 10.3"
+            }
+          },
+          "removing" : {
+            "pruning (i.e., using full trees as input)" : {
+              "hurts the result" : "by another 9.7 F1"
+            }
+          }
+        },
+        "from sentence" : "To study the contribution of each component in the C-GCN model, we ran an ablation study on the TACRED dev set (Table 3). We find that: (1) The entity representations and feedforward layers contribute 1.0 F1. (2) When we remove the dependency structure (i.e., setting A to I), the score drops by 3.2 F1. (3) F1 drops by 10.3 when we remove the feedforward layers, the LSTM component and the dependency structure altogether. (4) Removing the pruning (i.e., using full trees as input) further hurts the result by another 9.7 F1."
+      }
+    }
   }
-]
-"answer": "No"</pre>
+}
+				</pre>
                 </div>
                 <p></p>
                 <!-- Example 3-->
