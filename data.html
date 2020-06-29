@@ -414,7 +414,7 @@
 					The reference paper is <a href="https://www.aclweb.org/anthology/N18-1202" target="_blank">Deep contextualized word representations</a>. 
 					For this information unit, the subject node is  <font style="font-variant: small-caps">Contribution</font> which is left unspecified. 
 					It is then followed by the predicate "<i>has research problem</i>." Following this, the three phrases which were found to represent the research problem
-					are annotated. Further the sentences from where the phrases are taken are also annotated with predicate "<i>from sentence</i>." Note, sentence "TITLE" is a variable corresponding to the title of the paper.
+					are annotated. Further, the sentences from where the phrases are taken are also annotated with predicate "<i>from sentence</i>." Note, sentence "TITLE" is a variable corresponding to the title of the paper.
 
                 </p>
                 <div class="code-txt">
@@ -449,6 +449,11 @@
                     The reference paper is <a href="https://www.aclweb.org/anthology/D18-1244/" target="_blank">Graph Convolution over Pruned Dependency Trees Improves Relation Extraction</a>.
 					To the root <font style="font-variant: small-caps">Contribution</font> is connected the predicate "<i>has</i>" followed by the annotation for 
 					the <font style="font-variant: small-caps">AblationAnalysis</font> information unit.
+					In this example, the evidence sentences are annotated as a paragraph. 
+					Note, after the top-level information unit node <font style="font-variant: small-caps">AblationAnalysis</font>,
+					the annotations are all nested under entity "TACRED dev set," which can be interpreted as ablation experiment results that were
+					performed on this dataset. Owing to this nesting, the evidence sentences, for the sentence-based annotations, are not singled out on a per-sentence basis
+					close to the annotated phrase node, but are written together as a paragraph.
                 </p>
                 <div class="code-txt">
                 <pre>
