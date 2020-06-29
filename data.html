@@ -558,6 +558,32 @@
 }
 				</pre>
                 </div>
+				
+				<p class="lead">From the above annotations, the following 18 triples are obtained. These annotations comprise three levels of nested data overall.</p>
+                <div class="code-txt">
+                <pre>
+(<font style="font-variant: small-caps">Contribution</font>, has, <font style="font-variant: small-caps">ExperimentalSetup</font>)
+&nbsp;&nbsp;(<font style="font-variant: small-caps">ExperimentalSetup</font>, train, <font style="font-variant: small-caps">two types of models</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">two types of models</font>, first one, <font style="font-variant: small-caps">RNN Encoder–Decoder (RNNencdec, Cho et al., 2014a)</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">two types of models</font>, other, <font style="font-variant: small-caps">RNNsearch</font>)
+&nbsp;&nbsp;(<font style="font-variant: small-caps">ExperimentalSetup</font>, train, <font style="font-variant: small-caps">each model twice</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">each model twice</font>, with, <font style="font-variant: small-caps">sentences of length up to 30 words</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">each model twice</font>, with, <font style="font-variant: small-caps">sentences of length up to 50 word</font>)
+&nbsp;&nbsp;(<font style="font-variant: small-caps">ExperimentalSetup</font>, train, <font style="font-variant: small-caps">minibatch stochastic gradient descent (SGD) algorithm</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">minibatch stochastic gradient descent (SGD) algorithm</font>, with, <font style="font-variant: small-caps">Adadelta</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">minibatch stochastic gradient descent (SGD) algorithm</font>, update direction, <font style="font-variant: small-caps">minibatch of 80 sentences</font>)
+&nbsp;&nbsp;(<font style="font-variant: small-caps">ExperimentalSetup</font>, RNNencdec, <font style="font-variant: small-caps">encoder and decoder</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">encoder and decoder</font>, hidden units, <font style="font-variant: small-caps">1000</font>)	 
+&nbsp;&nbsp;(<font style="font-variant: small-caps">ExperimentalSetup</font>, RNNsearch, <font style="font-variant: small-caps">encoder</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">encoder</font>, consists of, <font style="font-variant: small-caps">forward and backward recurrent neural networks (RNN)</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">forward and backward recurrent neural networks (RNN)</font>, hidden units, <font style="font-variant: small-caps">1000</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">decoder</font>, hidden units, <font style="font-variant: small-caps">1000</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">multilayer network</font>, with, <font style="font-variant: small-caps">single maxout (Goodfellow et al., 2013) hidden layer</font>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="font-variant: small-caps">single maxout (Goodfellow et al., 2013) hidden layer</font>, to compute, <font style="font-variant: small-caps">conditional probability of each target word</font>)
+				</pre>
+                </div>				
+				
+				<p> </p>				
                 <!-- Example 5-->
                 <u><h4 class="section-heading">Example #5</h4></u>
                 <p class="lead">
