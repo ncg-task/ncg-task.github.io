@@ -406,7 +406,7 @@
                 <!-- <p>NOTE: The input to a system should include <i>snippet, question, scenario and history</i> <b>ONLY</b>. <font color="red">Evidence and answer should not be included in the input to a
                     prediction model. </font></p> -->
                 <hr/>
-                <p class="lead">Below, we provide five examples of different types of information units with supporting explanation.</p>
+                <p class="lead">Below, we provide five examples of different types of information units supported with an explanation of the annotated data.</p>
                 <!-- Example 2-->
                 <u><h4 class="section-heading">Example #1</h4></u>
                 <p class="lead">
@@ -414,7 +414,7 @@
 					The reference paper is <a href="https://www.aclweb.org/anthology/N18-1202" target="_blank">Deep contextualized word representations</a>. 
 					For this information unit, the subject node is  <font style="font-variant: small-caps">Contribution</font> which is left unspecified. 
 					It is then followed by the predicate "<i>has research problem</i>". Following this, the three phrases which were found to represent the research problem
-					are annotated. Further the sentences from where the phrases are taken are also annotated with predicate "<i>from sentence</i>".
+					are annotated. Further the sentences from where the phrases are taken are also annotated with predicate "<i>from sentence</i>". Note, sentence "TITLE" is a variable corresponding to the title of the paper.
 
                 </p>
                 <div class="code-txt">
@@ -437,6 +437,9 @@
 (<font style="font-variant: small-caps">Contribution</font>, has research problem, <font style="font-variant: small-caps">ELMo (Embeddings from Language Models) representations</font>).
 				</pre>
                 </div>				
+				
+				<p class="lead"> The machine reading task will entail, first, identifying sentences with the research contribution, and second, 
+				extracting the precise research problem phrase spans from the identified sentences in the first step.</p>
 				
                 <p></p>
                 <!-- Example 2-->
