@@ -134,15 +134,26 @@
 					Increasingly, text mining initiatives are seeking out recipes or formulaic semantic patterns to automatically 
 					mine machine-actionable information from scholarly articles.
 				
-					We have created a surface semantically structured dataset of scholarly articles 
-					structured for their research contributions in the field of natural language processing focused on machine learning applications (NLP-ML) 
+					For the shared task, we have created a surface semantically structured dataset of scholarly articles 
+					structured for their research contributions in the field of natural language processing focused on machine learning applications (the NLP-ML domain) 
 					across various information extraction tasks to be integrable within the <a href="https://www.orkg.org/orkg/" target="_blank">ORKG</a>. 
-					To this end, we have (1) identified sentences in the full text of scholarly publications that reflect research contributions; 
-					(2) created structured (subject,predicate,object) triple annotations from these sentences by identifying mentions of the contribution candidate entities and their relations; 
-					and (3) grouped collections of such triples, that arise from either consecutive or non-consecutive sentences, 
-					under one of eight core information units, viz. Research Problem, Approach, Objective, Experimental Setup, Results, Tasks, Experiments,
-					Ablation Analysis, and Baselines. 
-					These core information units are posited as <a href="https://www.amazon.com/Scripts-Plans-Goals-Understanding-Intelligence/dp/0898591384", target="_blank">thematic scripts</a> that are triple statement collections.
+					To this end, we have annotated: (1) <i>Contribution sentences</i>: a set of sentences about the contribution in the article;
+					(2) <i>Scientific terms and relations</i>: a set of scientific terms and relational cue phrases extracted from the contribution sentences; 
+					and (3) <i>Triples</i>: semantic statements that pair scientific terms with a relation, modeled toward subject-predicate-object RDF statements for KG building.					
+					
+					NLPContributionGraph uses two levels of knowledge systematization: 
+					1) At the root, it has a dummy node called <font style="font-variant: small-caps">Contribution</font>. 
+					And following the root node, 2) it has twelve nodes which we generically refer to as information units. 
+					Each scholarly article's annotated contribution data elements are organized under three (mandatory) or more of these information unit nodes, 
+					depending on whether they apply to the article.
+					The twelve nodes are: <font style="font-variant: small-caps">ResearchProblem</font>, 
+					<font style="font-variant: small-caps">Approach</font>, <font style="font-variant: small-caps">Model</font>, 
+					<font style="font-variant: small-caps">Code</font>, <font style="font-variant: small-caps">Dataset</font>, 
+					<font style="font-variant: small-caps">ExperimentalSetup</font>, <font style="font-variant: small-caps">Hyperparameters</font>, 
+					<font style="font-variant: small-caps">Baselines</font>, <font style="font-variant: small-caps">Results</font>, 
+					<font style="font-variant: small-caps">Tasks</font>, <font style="font-variant: small-caps">Experiments</font>, 
+					and <font style="font-variant: small-caps">AblationAnalysis</font>. The <i>Triples</i> are to be organized under three (mandatory) or more information units.					
+					These core information units are posited as <a href="https://www.amazon.com/Scripts-Plans-Goals-Understanding-Intelligence/dp/0898591384", target="_blank">thematic scripts</a> that are triple statement collections.					
                 </p>
 				
                 <p class="lead">													
