@@ -140,25 +140,19 @@
 					To this end, we have annotated: (1) <i>Contribution sentences</i>: a set of sentences about the contribution in the article;
 					(2) <i>Scientific terms and relations</i>: a set of scientific terms and relational cue phrases extracted from the contribution sentences; 
 					and (3) <i>Triples</i>: semantic statements that pair scientific terms with a relation, modeled toward subject-predicate-object RDF statements for KG building.					
-					
-					NLPContributionGraph uses two levels of knowledge systematization: 
-					1) At the root, it has a dummy node called <font style="font-variant: small-caps">Contribution</font>. 
-					And following the root node, 2) it has twelve nodes which we generically refer to as information units. 
-					Each scholarly article's annotated contribution data elements are organized under three (mandatory) or more of these information unit nodes, 
-					depending on whether they apply to the article.
-					The twelve nodes are: <font style="font-variant: small-caps">ResearchProblem</font>, 
+					The <i>Triples</i> are to be organized under three (mandatory) or more information units (<font style="font-variant: small-caps">ResearchProblem</font>, 
 					<font style="font-variant: small-caps">Approach</font>, <font style="font-variant: small-caps">Model</font>, 
 					<font style="font-variant: small-caps">Code</font>, <font style="font-variant: small-caps">Dataset</font>, 
 					<font style="font-variant: small-caps">ExperimentalSetup</font>, <font style="font-variant: small-caps">Hyperparameters</font>, 
 					<font style="font-variant: small-caps">Baselines</font>, <font style="font-variant: small-caps">Results</font>, 
 					<font style="font-variant: small-caps">Tasks</font>, <font style="font-variant: small-caps">Experiments</font>, 
-					and <font style="font-variant: small-caps">AblationAnalysis</font>. The <i>Triples</i> are to be organized under three (mandatory) or more information units.					
-					These core information units are posited as <a href="https://www.amazon.com/Scripts-Plans-Goals-Understanding-Intelligence/dp/0898591384", target="_blank">thematic scripts</a> that are triple statement collections.					
+					and <font style="font-variant: small-caps">AblationAnalysis</font>).
+					These core information units are posited as <a href="https://www.amazon.com/Scripts-Plans-Goals-Understanding-Intelligence/dp/0898591384", target="_blank">thematic scripts</a> that are triple statement collections.
+					Each scholarly article's extracted <i>Triples</i> are organized under three (mandatory) or more of these information unit nodes depending on whether they apply to the article.
                 </p>
 				
                 <p class="lead">													
-                    In our task, the goal is to find a set of subject-predicate-object statements for the shallow semantic structuring of 
-					contributions in scholarly publications that are more or less generically applicable for Natural Language Processing research.
+					The NLPContributionGraph Shared Task has the following three goals:
                 </p>
 
                 <p class="lead">
