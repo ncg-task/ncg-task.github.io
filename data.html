@@ -240,8 +240,11 @@
 					The topmost node in the NLPContributionGraph structure is <font style="font-variant: small-caps">Contribution</font>. 
 					Following which are eight core information units pertaining to the contribution that the annotated sentences 
 					and triples from the sentences are organized under. They are: <font style="font-variant: small-caps">ResearchProblem</font>, 
-					<font style="font-variant: small-caps">Approach</font>, <font style="font-variant: small-caps">Objective</font>, 
-					<font style="font-variant: small-caps">ExperimentalSetup</font>, <font style="font-variant: small-caps">Results</font>, <font style="font-variant: small-caps">Tasks</font>, <font style="font-variant: small-caps">Experiments</font>, <font style="font-variant: small-caps">AblationAnalysis</font>, and <font style="font-variant: small-caps">Baselines</font>.
+					<font style="font-variant: small-caps">Approach</font>, <font style="font-variant: small-caps">Model</font>,  <font style="font-variant: small-caps">Code</font>, 
+					<font style="font-variant: small-caps">Dataset</font>, <font style="font-variant: small-caps">ExperimentalSetup</font>, <font style="font-variant: small-caps">Hyperparameters</font>, 
+					<font style="font-variant: small-caps">Baselines</font>, <font style="font-variant: small-caps">Results</font>, 
+					<font style="font-variant: small-caps">Tasks</font>, <font style="font-variant: small-caps">Experiments</font>, 
+					and <font style="font-variant: small-caps">AblationAnalysis</font>.
 				
                     In this section we define these information units.
                 </p>
@@ -255,24 +258,34 @@
                         <td>It determines the research challenge addressed by a contribution using the predicate <i>hasResearchProblem</i>. By definition, it is the focus of the research investigation, in other words, <i>the issue for which the solution must be obtained</i>.</td>
                     </tr>
                     <tr>
-                        <th valign="top"><font style="font-variant: small-caps">Approach:</font></th>
+                        <th valign="top"><font style="font-variant: small-caps">Approach</font> or <font style="font-variant: small-caps">Model:</font></th>
                         <td>&nbsp;</td>
-                        <td>Depending on the paper's content, is referred to as <font style="font-variant: small-caps">Model</font> or <font style="font-variant: small-caps">Method</font> or 
-						<font style="font-variant: small-caps">Architecture</font> or <font style="font-variant: small-caps">System</font> or <font style="font-variant: small-caps">Application</font>. 
-						Essentially, this is the contribution of the paper as <i>the solution proposed for the research problem</i>.
+                        <td>Essentially, this is the contribution of the paper as <i>the solution proposed for the research problem</i>.
                         </td>
                     </tr>
                     <tr>
-                        <th valign="top"><font style="font-variant: small-caps">Objective:</font></th>
+                        <th valign="top"><font style="font-variant: small-caps">Code:</font></th>
                         <td>&nbsp;</td>
-                        <td>It is the <i>defined function for the machine learning algorithm to optimize over</i>.</td>
+                        <td>It is the link to the software on an opensource hosting platform such as Gitlab or Github or on the author's website.</td>
                     </tr>
                     <tr>
-                        <th valign="top"><font style="font-variant: small-caps">ExperimentalSetup:</font></th>
+                        <th valign="top"><font style="font-variant: small-caps">Dataset:</font></th>
+                        <td>&nbsp;</td>
+                        <td>This is another aspect of the contribution solution in the form of a dataset.</td>
+                    </tr>					
+                    <tr>
+                        <th valign="top"><font style="font-variant: small-caps">ExperimentalSetup:</font> or <font style="font-variant: small-caps">Hyperparameters:</font></th>
                         <td>&nbsp;</td>
                         <td>Includes details about the platform including both hardware (e.g., GPU) and software (e.g., Tensorflow library) for implementing the machine learning solution; and of variables, that determine the network structure (e.g., number of hidden units) 
-						and how the network is trained (e.g., learning rate), for tuning the software to the task objective. Depending on the paper's content, if the implementation details are not specified, it is called <font style="font-variant: small-caps">Hyperparameters</font> instead. </td>
+						and how the network is trained (e.g., learning rate), for tuning the software to the task objective. 
+						It is called <font style="font-variant: small-caps">ExperimentalSetup</font> when hardware details are provided, 
+						otherwise <font style="font-variant: small-caps">Hyperparameters</font>. </td>
                     </tr>
+                    <tr>
+                        <th valign="top"><font style="font-variant: small-caps">Baselines:</font></th>
+                        <td>&nbsp;</td>
+                        <td>They are the listed systems that a proposed <font style="font-variant: small-caps">Approach</font> or <font style="font-variant: small-caps">Model</font> is compared against. </td>
+                    </tr>					
                     <tr>
                         <th valign="top"><font style="font-variant: small-caps">Results:</font></th>
                         <td>&nbsp;</td>
@@ -293,8 +306,7 @@
                         <td>&nbsp;</td>
                         <td>
 						It is a container information unit that includes one or more of the previous discussed units as sub information units. 
-						Can include a combination of <font style="font-variant: small-caps">ExperimentalSetup</font> and <font style="font-variant: small-caps">Results</font>, 
-						or it can be combination of lists of <font style="font-variant: small-caps">Tasks</font> and their <font style="font-variant: small-caps">Results</font>, 
+						Can be combination of lists of <font style="font-variant: small-caps">Tasks</font>, <font style="font-variant: small-caps">ExperimentalSetup</font> and <font style="font-variant: small-caps">Results</font>,
 						or a combination of <font style="font-variant: small-caps">Approach</font>, <font style="font-variant: small-caps">ExperimentalSetup</font> and <font style="font-variant: small-caps">Results</font>.
                         </td>
                     </tr>
@@ -303,11 +315,6 @@
                         <td>&nbsp;</td>
                         <td>It is a form of <font style="font-variant: small-caps">Results</font> that describes the performance of components in an <font style="font-variant: small-caps">Approach</font> or <font style="font-variant: small-caps">Model</font>.
                         </td>
-                    </tr>
-                    <tr>
-                        <th valign="top"><font style="font-variant: small-caps">Baselines:</font></th>
-                        <td>&nbsp;</td>
-                        <td>They are the listed systems that a proposed <font style="font-variant: small-caps">Approach</font> or <font style="font-variant: small-caps">Model</font> is compared against. </td>
                     </tr>
                 </table>
                 <p></p>
