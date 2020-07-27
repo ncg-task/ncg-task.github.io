@@ -711,12 +711,12 @@ The first one is an RNN Encoder - Decoder ( RNNencdec , , and the other is the p
 					[task-name-folder]/&nbsp;# machine-translation, named-entity-recognition, question-answering, relation-classification, text-classification <br>
 					&nbsp;&nbsp;├── [article-counter-folder]/&nbsp;# ranges from 0 to n-1 depending on the total number (n) of articles per task in the test dataset <br>
 					&nbsp;&nbsp;│ &nbsp;&nbsp;├── sentences.txt&nbsp;# annotated contribution sentences in the file with counter starting at 1 <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;├── entities.txt <br>
+					&nbsp;&nbsp;│ &nbsp;&nbsp;├── entities.txt&nbsp;# annotated scientific term and predicate phrases in terms of tokens from the contribution sentences where tokens also have a start counter of 1 <br>
 					&nbsp;&nbsp;│ &nbsp;&nbsp;└── triples/ <br>
 					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── research-problem.txt <br>
 					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── model.txt <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── ... # there are 12 information units in all and each article may be annotated by 3 or 6 <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;└── ...               # there are ten articles annotated for each task, so this repeats nine more times <br>
+					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── ... # there are 12 information units in all and each article may be annotated by 3 (mandatory) or 6 <br>
+					&nbsp;&nbsp;│ &nbsp;&nbsp;└── ...               # there are n articles annotated for each task, so this repeats n-1 more times <br>
 					&nbsp;&nbsp;└── ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# there are five tasks selected overall, so this repeats four more times
 
 					</tt></small>
