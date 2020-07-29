@@ -705,29 +705,14 @@ The first one is an RNN Encoder - Decoder ( RNNencdec , , and the other is the p
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
 				</hr> -->
-                <h2 class="section-heading" style="text-align: left;">Sample Submission</h2>
-                <p class="lead">
-					<small><tt>
-					[task-name-folder]/&nbsp;# machine-translation, named-entity-recognition, question-answering, relation-classification, text-classification <br>
-					&nbsp;&nbsp;├── [article-counter-folder]/&nbsp;# ranges from 0 to n-1 depending on the total number (n) of articles per task in the test dataset <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;├── sentences.txt&nbsp;# annotated contribution sentences in the file with counter starting at 1 <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;├── entities.txt&nbsp;# annotated scientific term and predicate phrases in terms of tokens from the contribution sentences where tokens also have a start counter of 1 <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;└── triples/ <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── research-problem.txt <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── model.txt <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;│ &nbsp;&nbsp;└── ... # there are 12 information units in all and each article may be annotated by 3 (mandatory) or 6 <br>
-					&nbsp;&nbsp;│ &nbsp;&nbsp;└── ... # there are n articles annotated for each task, so this repeats n-1 more times <br>
-					&nbsp;&nbsp;└── ... # there are five tasks selected overall, so this repeats four more times
-
-					</tt></small>
-					
-					<br> <br>
-					
-					The submission to Codalab must be uploaded as a zipped folder containing each of the [task-name-folders] at the top-level. 
-					For instance, on Windows, simply right-click on each task folder and from the list of options zip them, cumultatively, using 7zip or a related software.
+                <h2 class="section-heading" style="text-align: left;">Sample NLPContributionGraph Task Input and Output Data</h2>
+                <p class="lead">					
+					NLPContributionGraph will be organized in three Evaluation Phases. The Training and Development datasets will remain the same across all evaluation phases. 
+					However, the test input data will depend on the evaluation phase in question. Further, the expected system output for automatic evaluation on 
+					Codalab will also change depending on the evaluation phase.
 				</p>
 				
-				<p class="lead">Click here for <a href="data/sample-submission.zip" class="btn btn-info btn-lg"> <span class="dataset-name">Sample Submission Download</span> </a></p>
+				<p class="lead">For the Training and Development input sample please refer to our Trial Data Release. </p>
             <!-- </div> -->
         <!-- </div> -->
 
